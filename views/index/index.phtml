@@ -1,0 +1,70 @@
+<?php
+    $url = 'views/index/img/equipos/fondo_mini_2.jpg';
+?>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="<?php echo $_layoutParams['ruta_css_index']; ?>styles.css" rel="stylesheet" type="text/css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL ?>public/js/jquery.validate.js"></script>
+        <script type="text/javascript" src="<?php echo BASE_URL ?>public/js/jquery.js"></script>
+        <style type="text/css">
+            #registro {
+                background-image: url('<?php echo $url;?>');
+            }
+        </style>
+    </head>
+    <body>
+        <div id="cabecera">
+            <img src="<?php echo $_layoutParams['ruta_img_index']; ?>logotipo.png" id="logo"/>
+            <form id="form_login" action="login">
+                <button id="login" type="submit">Entrar</button>
+            </form>
+        </div>
+        <div id="registro">
+            <form name="registrar" id="form_registro">
+                <input type="text" class="caja_texto" placeholder="Nombre de usuario" required><br>
+                <input type="text" class="caja_texto" placeholder="Email" required><br>
+                <input type="password" class="caja_texto" placeholder="Crea una contraseña" required><br>
+                <select class="caja_texto" required>
+                    <option>Escoge tu seleccion...</option>
+                    <option>Alemania</option>
+                    <option>Argentina</option>
+                    <option>Brasil</option>
+                    <option>España</option>
+                    <option>Holanda</option>
+                    <option>Italia</option>
+                    <option>Portugal</option>
+                    <option>Uruguay</option>
+                </select><br>
+                <input type="submit" value="Registrarse en Welcometorio" class="bregistrar">
+                <p class="terminos">Clicando en "Registrarse en Welcometorio", estás aceptando los <a href="#">términos de servicio</a> y la <a href="#">politica de privacidad</a>.</p>
+            </form>
+        </div>
+        <div id="contenido2">
+            <h1>Únete al mundial</h1>
+            <p>Vive la emoción del mundial como nunca antes.</p>
+            <div>
+                <div class="mini_info">
+                    <img src="<?php echo $_layoutParams['ruta_img_index']; ?>services.png" class="img_info"/><br>
+                    Conviertete en manager de tu seleccion, configurando i editando la lista de convocados.
+                </div>
+                <div class="mini_info">
+                    <img src="<?php echo $_layoutParams['ruta_img_index']; ?>money.png" class="img_info"/><br>
+                    Gana monedas ganando partidos. Compra jugadores en el mercado o vendelos.
+                </div>            
+            </div>
+            <div>
+                <div class="mini_info">
+                    <img src="<?php echo $_layoutParams['ruta_img_index']; ?>football.png" class="img_info"/><br>
+                    Disputa partidos contra selecciones de otro usuario.
+                </div>
+                <div class="mini_info">
+                    <img src="<?php echo $_layoutParams['ruta_img_index']; ?>man.png" class="img_info"/><br>
+                    Plantea tu once ideal, y lleva a tu seleccion a la cima del mundial
+                </div>                            
+            </div>
+        </div>
+    </body>
+</html>
